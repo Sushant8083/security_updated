@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/sidebar.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .admin-content .card {
+            background: linear-gradient(to right, #007BFF 50%, #fff 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.5s ease-out;
+        }
+
+        .admin-content .card:hover {
+            background-position: left bottom;
+        }
+
+        .admin-content .card h2 {
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width: 854px) {
+            .admin-content .card h2 {
+                font-size: 14px;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #303956;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .back-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dashboard">
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">×</a>
+                <img class="bg-[#5567FF] p-1 h-[70px] mx-auto" src=" /images/sidebar-image.svg" alt="">
+                <div class="sidebar-links flex flex-col mt-8 gap-6 items-center text-white text-[20px]">
+                    <a href="/createservice"
+                        class="transition duration-200 ease-in hover:scale-110 hover:font-bold">Create Service</a>
+                    <a href="/manageservice"
+                        class="transition duration-200 ease-in hover:scale-110 hover:font-bold">Manage
+                        Services</a>
+                    
+                    <a href="/logout" class="transition duration-200 ease-in hover:scale-110 hover:font-bold">Logout</a>
+                </div>
+            </div>
+            <div id="right-dashboard">
+                <div class="nav flex items-center justify-between w-full py-4 px-6 border-b-2 border-gray-200 	">
+                    <div class="left flex items-center gap-3">
+                        <img class="h-[40px]" src="/images/tcps logo.jpeg" alt="">
+                        <h1 class="font-semibold">The New National Security Services Admin Panel</h1>
+                    </div>
+                    <div class="right flex items-center gap-2">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+                </div>
+
+
+                <!-- Create Course  -->
+                <div class="backBtn w-full px-6 py-3">
+                    <button class="back-button" onclick="window.history.back()">
+                        << Go Back</button>
+                </div>
+                <div class=" p-8 rounded shadow-md w-full">
+                    <h2 class="text-2xl font-bold mb-8 text-blue-500 text-center">📚 Create A Service 📚</h2>
+                    <form action="/createservice" method="POST" enctype="multipart/form-data">
+
+                        <div class="mb-5">
+                            <label for="courseName" class="block mb-2 text-sm text-gray-600">Service 
+                                Name</label>
+                            <input type="text" id="courseName" name="serName"
+                                class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="courseImage" class="block mb-2 text-sm text-gray-600">Service Image</label>
+                            <input type="file" id="courseImage" name="sImage"
+                                class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300">
+                        </div>
+                        <button type="submit"
+                            class="w-full py-2 px-4 border border-transparent rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 transition duration-150 ease-in-out">Create
+                            Service</button>
+                    </form>
+                </div>
+                <!-- Create Course  -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/sidebar.js"></script>
+</body>
+
+</html>

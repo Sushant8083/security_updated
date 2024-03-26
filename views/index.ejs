@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The New National Security Services
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  
+
+  <body>
+    <%- include('nav') %>
+
+    <!-- Carsoul  -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/1security.webp"
+            id="photo1"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" id="photo1">
+          <div class="back"></div>
+          <img src="/images/2security.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="photo1">
+          <div class="back"></div>
+          <img src="/images/3security.webp" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carsoul End -->
+
+    <!-- home  -->
+    <div class="container-xxl py-5" id="home">
+      <div class="container">
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="https://images.unsplash.com/photo-1581568736305-49a04e012c13?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- <h6 class="section-title bg-white text-start text-primary pe-3">
+              About Us
+            </h6> -->
+            <h1 class="mb-4">Welcome to The New National Security Services</h1>
+            <p class="mb-4">
+              <span class="fw-bold">SERVICE OFFERED BY OUR AGENCY</span>
+            </p>
+            <p class="mb-4">
+              <span class="fw-bold">1. SERVICE OFFERED BY OUR AGENCY</span
+              ><br />
+              We provide trained Civillian as well as Ex-Serviceman Gunman with
+              Uniforms and other accesories as per requirement. Security guard
+              services are a fundamental component of physical security,
+              providing on-the-ground protection for people, property, and
+              assets.
+            </p>
+            <p class="mb-4">
+              <span class="fw-bold">2. HOUSEKEEPING SERVICES </span><br />
+              We provide trained Housekeeping personnel with or material to keep
+              your office factory or premises clean. Combining housekeeping
+              services with security guard duties can provide a comprehensive
+              approach to maintaining the safety, cleanliness, and overall
+              well-being of a property.
+            </p>
+            <p class="mb-4">
+              <span class="fw-bold">3. LABOUR CONTRACTS </span><br />
+              We have all the necessary & required Govt. Licences accept your
+              Labour on our contract as well as we can new labour as per your
+              requirement. Labor contracts for security guard services outline
+              the terms and conditions of employment between the security
+              company providing the guards and the client or organization
+              receiving the security services.
+            </p>
+            <p class="mb-4">
+              <span class="fw-bold">4. Fire Fighting </span><br />
+              We have guards, officers & supervicors for fire fighting who are
+              trained with modern fire fighting accessories, equipments &
+              methods.
+            </p>
+            <p class="mb-4">
+              <span class="fw-bold">5. Allied Service </span><br />
+              In addition to security management services, we also provide
+              casual & on - contract basic labour whenever demanded at very
+              rates, besides these we are also arranging articles required for
+              fire fighting such as fire buckets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home end -->
+
+    <!-- services Start -->
+    <div class="container-xxl py-5" id="services">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Services
+          </h6>
+          <h1 class="mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- <%if(service.length>0){%> -->
+            <%service.forEach(function(elem){%>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <a href="/" class="text-decoration-none text-dark">
+                  <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                      <img class="img-fluid" src="<%=elem.serviceImage%>" alt="" />
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                      <h5 class="mb-1"><%=elem.seviceName%></h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <%})%>
+          <!-- <%}else{%>
+            <h3>No Services are there!</h3>
+          <%}%> -->
+          
+        </div>
+      </div>
+    </div>
+    <!-- services End -->
+
+    <!-- gallery Start -->
+    <div class="container-xxl py-5 category" id="gellery">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Images
+          </h6>
+          <h1 class="mb-5">Our Gallery</h1>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g1.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g2.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g3.jpeg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style="min-height: 350px"
+          >
+            <a class="position-relative d-block h-100 overflow-hidden" href="">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="/images/g4.jpeg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row g-3">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g5.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g6.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="/images/g7.jpeg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style="min-height: 350px"
+          >
+            <a class="position-relative d-block h-100 overflow-hidden" href="">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="/images/g8.jpeg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery end -->
+
+    <!-- services Start -->
+    <div class="container-xxl py-5" id="about">
+      <div class="container">
+        <div class=" wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            About
+          </h6>
+          <h1 class="mb-3">ABout New National Security Service</h1>
+          <p class="mb-4">
+            New National Security Service is Security, Fire Fighting and Housing Consultant in Pune, established in 1989 Professionalism as a foundation. The Agency was started by the ex-serviceman who had experience of serving the country in various department of Government.
+          </p>
+          <p class="mb-4">
+            Dedicated to serve our clients we provide number of services like Security Guards, Body Guards and Gunman to secure Private & Public Hotels, Hospitals and industries; Housekeeping Service to keep your officers, apartment and business promices clean and labour and business needs.
+          </p>
+          <p class="mb-4">
+            Highly trained and experienced proffesionals, Government Approvel, Insurance to cover all services are one of our key features that will choose our service
+          </p>
+
+          <h2 class="section-title bg-white text-center fw-bold text-dark px-3">
+            Why Us?
+          </h2>
+          <p class="mb-4">
+            <ul>
+              <li><span class="fw-bold">Experience:</span> We have highly experienced staff
+              </li>
+              <li><span class="fw-bold">Liaison:</span> We have EX- Police staff, whice is able to establish close liaison with police authorities, with a view cooperation during strikes,lockoutes and other similar internal unrests.</li>
+              <li><span class="fw-bold">Training:</span> All our employees are professionally trained.</li>
+              <li><span class="fw-bold">Accreditations:</span> We are Government Accredited & Audited Company.</li>
+              <li><span class="fw-bold">Insurance:</span> We have full insurance to cover all the offered services.</li>
+              <li><span class="fw-bold">Account Manger:</span> We will provide you with personal Accounts manager.</li>
+              <li><span class="fw-bold">Coverage:</span> We are fully expanded to provide service to all over Maharashtra</li>
+              <li><span class="fw-bold">24 x 7 Support:</span> We are always online our Maharashtra control Room Service are available for 24 x 7</li>
+
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- services End -->
+
+    <!-- contact form -->
+    <div class="container-xxl py-5" id="contact">
+      <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+              <h1 class="mb-5">Contact For Any Query</h1>
+          </div>
+          <div class="row d-flex align-items-center justify-content-around">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <h5>Business Information</h5>
+                  <p class="mb-4"><span class="fw-bold">Business Category:</span> Security, Service & Consultants <br>
+                    <span class="fw-bold">Business Type:</span> Service Provider <br>
+                    <span class="fw-bold">Business Since:</span> 1989 <br>
+                    <span class="fw-bold">Working Days:</span> All 7 Days <br>
+                    <span class="fw-bold">Timings[IST]:</span> 24 Hours</p>
+                  <div class="d-flex align-items-start mb-3">
+                      <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                          <i class="fa fa-map-marker-alt text-white"></i>
+                      </div>
+                      <div class="ms-3">
+                          <h5 class="text-primary">Address</h5>
+                          <p class="mb-0">301, Vasant Vaibhav Residency,
+                            Nisarg Colony, Kashid Nagar, Pimple Gurav, Pune - 411061
+                            Maharashtra, India</p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-3">
+                      <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                          <i class="fa fa-phone-alt text-white"></i>
+                      </div>
+                      <div class="ms-3">
+                          <h5 class="text-primary">Mobile</h5>
+                          <p class="mb-0"> +91-20-65290835, <br> +91-7875644162
+                          </p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                      <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                          <i class="fa fa-envelope-open text-white"></i>
+                      </div>
+                      <div class="ms-3">
+                          <h5 class="text-primary">Email</h5>
+                          <p class="mb-0">newnational_s@yahoo.com</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+              <!-- Contact form here -->
+              <form action="/contactform" method="post">
+                  <div class="row g-3">
+                      <div class="col-md-6">
+                          <div class="form-floating">
+                              <input type="text" class="form-control" id="name" name="cname" placeholder="Your Name">
+                              <label for="name">Your Name</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-floating">
+                              <input type="email" class="form-control" id="email" name="cemail" placeholder="Your Email">
+                              <label for="email">Your Email</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="form-floating">
+                              <input type="text" class="form-control" id="subject" name="csubject" placeholder="Subject">
+                              <label for="subject">Subject</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="form-floating">
+                              <textarea class="form-control" name="cmessage" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                              <label for="message">Message</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                      </div>
+                  </div>
+              </form>
+              </div>
+      </div>
+  </div>
+
+    <%- include('footer') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
